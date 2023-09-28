@@ -42,7 +42,7 @@ function App() {
 				</ul>
 
 				<Routes>
-					<Route path="/:id" element={NumberGrabber} />
+					<Route path="/:id" element={<NumberGrabber />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
