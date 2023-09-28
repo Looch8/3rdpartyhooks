@@ -18,6 +18,13 @@ function App() {
 		setMessage(storedMessage);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
+
+	useEffect(() => {
+		// Do something whenever message updates
+		setStoredMessage(message);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [message]);
+
 	return <div className="App">{message && <h1>{message}</h1>}</div>;
 }
 
